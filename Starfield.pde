@@ -31,7 +31,7 @@ void setup(){
   size(600,600);
   for(int i = 0; i < parts.length; i++)
     parts[i] = new Particle();
-  for(int i = 0; i <6; i++)
+  for(int i = 0; i <5; i++)
     parts[i] = new light();
 }
 
