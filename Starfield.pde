@@ -49,7 +49,7 @@ class light extends Particle{
   light(){
     myX = 300;
     myY = 300;
-    mySpeed = (int)(Math.random()*10)+3;
+    mySpeed = (int)(Math.random()*5)+3;
     myAngle = (Math.random()*2*Math.PI);
     myColor = color((int)(Math.random()*100)+30,(int)(Math.random()*156)+100,0);
   }
@@ -58,8 +58,8 @@ class light extends Particle{
     ellipse((float)myX,(float)myY,20,20);
   }
   void move(){
-    myX = myX + Math.sin(myAngle)/mySpeed;
-    myY = myY + Math.cos(myAngle)/mySpeed;
+    myX = myX + Math.sin(myAngle)/mySpeed + (int)(Math.random()*3)-1;
+    myY = myY + Math.cos(myAngle)/mySpeed + (int)(Math.random()*3)-1;
     if(myX > 580 || myX < 20)
       myX = myX - Math.sin(myAngle)*mySpeed;
     if(myY > 580 || myY < 20)
