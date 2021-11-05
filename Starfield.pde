@@ -11,9 +11,9 @@ class Particle{
   void move(){
     myX = myX + Math.cos(myAngle)*mySpeed;
     myY = myY + Math.sin(myAngle)*mySpeed;
-    if(myX > 550 || myX < 50)
+    if(myX > 580 || myX < 20)
       myX = myX - Math.cos(myAngle)*mySpeed;
-    if(myY > 550 || myY < 50)
+    if(myY > 580 || myY < 20)
       myY = myY - Math.sin(myAngle)*mySpeed;
   }
   void show(){
@@ -60,9 +60,9 @@ class light extends Particle{
   void move(){
     myX = myX + Math.sin(myAngle)/mySpeed;
     myY = myY + Math.cos(myAngle)/mySpeed;
-    if(myX > 550 || myX < 50)
+    if(myX > 580 || myX < 20)
       myX = myX - Math.sin(myAngle)*mySpeed;
-    if(myY > 550 || myY < 50)
+    if(myY > 580 || myY < 20)
       myY = myY - Math.cos(myAngle)*mySpeed;
   }
 }
